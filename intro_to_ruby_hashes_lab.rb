@@ -30,7 +30,6 @@ def monopoly_with_third_tier
         names:{},
         rent_in_dollars:{one_piece_owned:25}
       }
-
     }
     monopoly_with_third_tier
 end
