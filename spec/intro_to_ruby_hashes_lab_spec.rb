@@ -1,5 +1,6 @@
 require_relative 'spec_helper'
 require_relative '../intro_to_ruby_hashes_lab.rb'
+require 'pry'
 
 describe "working with hashes" do
 
@@ -59,6 +60,7 @@ describe "building a multidimensional monopoly hash" do
   describe "adding key-value pairs to the third level of the monopoly hash that we continued building in the #monopoly_with_second_tier method" do
     describe "#monopoly_with_third_tier" do
       it "sets the 1st key of the :rent_in_dollars hash to a symbol, :one_piece_owned, whose value is the integer 25" do
+        binding.pry
         expect(monopoly_with_third_tier.values[0].values.count).to eq(3)
         expect(monopoly_with_third_tier.values[0][:rent_in_dollars].values[0]).to eq(25)
         expect(monopoly_with_third_tier.values[0][:rent_in_dollars].keys[0]).to eq(:one_piece_owned)
